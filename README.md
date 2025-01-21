@@ -17,7 +17,7 @@ A simple and efficient web-based stopwatch that allows users to track time with 
 ## 🌐 Demo
 
 Check out a live demo of the stopwatch here:  
-[Live Demo](#https://sumitti.github.io/PRODIGY_WD_02/) 
+[Live Demo](https://sumitti.github.io/PRODIGY_WD_02/) 
 
 
 ## 🧑‍💻 Usage
