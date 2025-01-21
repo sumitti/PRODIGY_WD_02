@@ -113,38 +113,15 @@ h1 {
     background-color: #201f1f; 
     color: rgba(0, 0, 255, 0.704);
     border: none;
-     /* display the button middle-bottom  of the device */
     position: absolute;
     bottom: 10%;
     right: 20%;
-}
-
-
-.btn-pause {
-    background-color: #201f1f;
-    color: rgba(0, 0, 255, 0.704);
-    border: none;
-     /* display the button middle-bottom  of the device */
-    position: absolute;
-    bottom: 10%;
-    right: 20%;
-}
-
-.btn-laps {
-    background-color: #201f1f; 
-    color: rgba(0, 0, 255, 0.704);
-    border: none;
-    /* display the button middle-bottom  of the device */
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
 }
 
 .btn-reset {
     background-color: #201f1f; 
     color: rgba(0, 0, 255, 0.704);
-    border: none;
-    /* display the button middle-bottom  of the device */
+    border: none;    
     position: absolute;
     bottom: 10%;
     left: 20%;
