@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/2055/2055568.png">
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="A simple and elegant stopwatch that allows you to track time, pause, reset, and record laps with ease. Perfect for timing workouts, cooking, or other activities." />
+    <meta name="keywords" content="stopwatch, timer, laps, track time, online stopwatch" />
+
+    <title>Stopwatch</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Stopwatch</h1>
+            <!-- set the timer icon right side of the device in h1 line -->
+            <span class="timer-icon"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
+                    width="48px" fill="#CCCCCC">
+                    <path
+                        d="M390-860q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h180q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H390Zm90.18 447q12.82 0 21.32-8.63 8.5-8.62 8.5-21.37v-170q0-12.75-8.68-21.38-8.67-8.62-21.5-8.62-12.82 0-21.32 8.62-8.5 8.63-8.5 21.38v170q0 12.75 8.68 21.37 8.67 8.63 21.5 8.63ZM480-81q-74 0-139.5-28.5T226-187q-49-49-77.5-114.5T120-441q0-74 28.5-139.5T226-695q49-49 114.5-77.5T480-801q67 0 125.5 22T710-717l30-30q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5l-30 30q36 40 61.5 97T840-441q0 74-28.5 139.5T734-187q-49 49-114.5 77.5T480-81Z" />
+                </svg></span>
+        </div>
+        <!-- Time Display -->
+        <div class="time-display" id="timeDisplay">00:00:00</div>
+        <ul class="laps" id="lapsList"></ul>
+
+        <div class="btn-container">
+            <!-- Play/Pause Button -->
+            <button id="playPauseBtn" class="btn btn-circle btn-play">
+                <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#0000F5">
+                    <path
+                        d="M320-263v-438q0-15 10-24.17 10-9.16 23.33-9.16 4.34 0 8.84 1.16 4.5 1.17 8.83 3.5L715.67-510q7.66 5.33 11.5 12.33 3.83 7 3.83 15.67t-3.83 15.67q-3.84 7-11.5 12.33L371-234.33q-4.33 2.33-8.83 3.5-4.5 1.16-8.84 1.16-13.33 0-23.33-9.16Q320-248 320-263Z" />
+                </svg>
+            </button>
+
+            <!-- Reset/Laps Button -->
+            <button id="resetLapsBtn" class="btn btn-circle btn-reset">
+                <svg id="resetIcon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#0000F5">
+                    <path
+                        d="M240-306.67v-346.66q0-27.5 19.58-47.09Q279.17-720 306.67-720h346.66q27.5 0 47.09 19.58Q720-680.83 720-653.33v346.66q0 27.5-19.58 47.09Q680.83-240 653.33-240H306.67q-27.5 0-47.09-19.58Q240-279.17 240-306.67Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

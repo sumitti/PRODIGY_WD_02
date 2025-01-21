@@ -1,0 +1,153 @@
+body {
+    background-color: #090909f1;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace; /* Clean and precise font */
+    font-size: 3rem; /* Subtle size */
+    /* set the font weight thinner */
+    font-weight: 300;
+    margin-bottom: 10px;     
+    color: #bdbdbd; /* Softer color for less prominence */
+    letter-spacing: 0.05rem; /* Subtle spacing */
+    /* display the text top corner of the device */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.timer-icon {
+    /* <!-- set the timer icon right side of the device in h1 line --> */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* Add a pulsing animation */
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.time-display {
+    font-family: 'Roboto Mono', monospace; /* Clean and precise font */
+    font-size: 3.5rem; /* Perfect size for mobile */
+    font-weight: 700; /* Bold for emphasis */
+    margin-bottom: 20px;
+    letter-spacing: 0.05rem; /* Subtle spacing */   
+    color: #f5f5f5eb; /* Softer color for less prominence */
+}
+
+.laps {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto; /* Add scroll-bar for more than 3 laps */
+}
+/* Hide the default scrollbar */
+.laps::-webkit-scrollbar {
+    display: none;
+}
+.laps::-webkit-scrollbar-thumb {
+    background-color: #333; /* Darker color */
+    border-radius: 10px;
+}
+
+
+.laps-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Darker color */
+}
+
+.number{
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #bdbdbd; /* Softer color for less prominence */  
+    font-weight: 600; /* Bold for emphasis */
+}
+.time-stamp{
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #bdbdbd; /* Softer color for less prominence */
+    font-weight: 600; /* Bold for emphasis */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern button shadow */
+}
+
+.btn-play{
+    background-color: #201f1f; 
+    color: rgba(0, 0, 255, 0.704);
+    border: none;
+     /* display the button middle-bottom  of the device */
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+
+
+.btn-pause {
+    background-color: #201f1f;
+    color: rgba(0, 0, 255, 0.704);
+    border: none;
+     /* display the button middle-bottom  of the device */
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+
+.btn-laps {
+    background-color: #201f1f; 
+    color: rgba(0, 0, 255, 0.704);
+    border: none;
+    /* display the button middle-bottom  of the device */
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.btn-reset {
+    background-color: #201f1f; 
+    color: rgba(0, 0, 255, 0.704);
+    border: none;
+    /* display the button middle-bottom  of the device */
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+
